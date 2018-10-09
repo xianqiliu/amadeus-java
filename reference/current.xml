@@ -41,7 +41,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;1.2.0&quot;"
+ value="&quot;1.1.1&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
