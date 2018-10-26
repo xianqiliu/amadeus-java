@@ -347,13 +347,18 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p><p>The Amadeus API client. To initialize, use the builder as follows:</p>
+<p><p>
+ The Amadeus API client. To initialize, use the builder as follows:
+ </p>
 
  <pre>
- Amadeus amadeus = Amadeus.builder("CLIENT_ID", "CLIENT_SECRET").build();
+ Amadeus amadeus =
+ Amadeus.builder("REPLACE_BY_YOUR_API_KEY", "REPLACE_BY_YOUR_API_SECRET").build();
  </pre>
 
- <p>Or pass in environment variables directly:</p>
+ <p>
+ Or pass in environment variables directly:
+ </p>
 
  <pre>
  Amadeus.builder(System.getenv()).build();
@@ -432,8 +437,7 @@ Summary:
           <a href="../../com/amadeus/ReferenceData.html">ReferenceData</a></td>
           <td class="jd-linkcol"><a href="../../com/amadeus/Amadeus.html#referenceData">referenceData</a></td>
           <td class="jd-descrcol" width="100%"><p>
- A namespaced client for the
- <code>/v2/reference-data</code> endpoints.</td>
+ A namespaced client for the <code>/v2/reference-data</code> endpoints.</td>
       </tr>
       
     
@@ -445,8 +449,7 @@ Summary:
           <a href="../../com/amadeus/Shopping.html">Shopping</a></td>
           <td class="jd-linkcol"><a href="../../com/amadeus/Amadeus.html#shopping">shopping</a></td>
           <td class="jd-descrcol" width="100%"><p>
- A namespaced client for the
- <code>/v1/shopping</code> endpoints.</td>
+ A namespaced client for the <code>/v1/shopping</code> endpoints.</td>
       </tr>
       
     
@@ -458,8 +461,7 @@ Summary:
           <a href="../../com/amadeus/Travel.html">Travel</a></td>
           <td class="jd-linkcol"><a href="../../com/amadeus/Amadeus.html#travel">travel</a></td>
           <td class="jd-descrcol" width="100%"><p>
- A namespaced client for the
- <code>/v1/travel</code> endpoints.</td>
+ A namespaced client for the <code>/v1/travel</code> endpoints.</td>
       </tr>
       
     
@@ -494,8 +496,8 @@ Summary:
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../com/amadeus/Amadeus.html#builder(java.util.Map<java.lang.String, java.lang.String>)">builder</a></span>(Map&lt;String,&nbsp;String&gt; environment)
         
-        <div class="jd-descrdiv">Creates a builder object initialized with the environment variables that can be used to
- build an Amadeus API com.amadeus.client.</div>
+        <div class="jd-descrdiv">Creates a builder object initialized with the environment variables that can be used to build
+ an Amadeus API com.amadeus.client.</div>
   
   </td></tr>
 
@@ -513,8 +515,7 @@ Summary:
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../com/amadeus/Amadeus.html#builder(java.lang.String, java.lang.String)">builder</a></span>(String clientId, String clientSecret)
         
-        <div class="jd-descrdiv">Creates a builder object that can be used to build
- an Amadeus com.amadeus.client.</div>
+        <div class="jd-descrdiv">Creates a builder object that can be used to build an Amadeus com.amadeus.client.</div>
   
   </td></tr>
 
@@ -1067,8 +1068,7 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p><p>
- A namespaced client for the
- <code>/v2/reference-data</code> endpoints.
+ A namespaced client for the <code>/v2/reference-data</code> endpoints.
  </p>
 </p></div>
 
@@ -1101,8 +1101,7 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p><p>
- A namespaced client for the
- <code>/v1/shopping</code> endpoints.
+ A namespaced client for the <code>/v1/shopping</code> endpoints.
  </p>
 </p></div>
 
@@ -1135,8 +1134,7 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p><p>
- A namespaced client for the
- <code>/v1/travel</code> endpoints.
+ A namespaced client for the <code>/v1/travel</code> endpoints.
  </p>
 </p></div>
 
@@ -1188,8 +1186,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Creates a builder object initialized with the environment variables that can be used to
- build an Amadeus API com.amadeus.client.
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a builder object initialized with the environment variables that can be used to build
+ an Amadeus API com.amadeus.client.
 
  <pre>
  Amadeus amadeus = Amadeus.builder(System.getenv()).build();
@@ -1238,8 +1236,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Creates a builder object that can be used to build
- an Amadeus com.amadeus.client.
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a builder object that can be used to build an Amadeus com.amadeus.client.
 
  <pre>
  Amadeus amadeus = Amadeus.builder("CLIENT_ID", "CLIENT_SECRET").build();
