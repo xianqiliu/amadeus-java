@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  FareSearch
+  Search
 
 
 </title>
@@ -157,8 +157,6 @@
     <li class="api apilevel-">
   <a href="../../../com/amadeus/shopping/hotel/package-summary.html">com.amadeus.shopping.hotel</a></li>
     <li class="api apilevel-">
-  <a href="../../../com/amadeus/travel/analytics/package-summary.html">com.amadeus.travel.analytics</a></li>
-    <li class="api apilevel-">
   <a href="../../../com/amadeus/travel/analytics/airTraffic/package-summary.html">com.amadeus.travel.analytics.airTraffic</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -175,8 +173,6 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/AirTraffic.Analytics.Flights.html">AirTraffic.Analytics.Flights</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/AirTraffic.Analytics.Travelers.html">AirTraffic.Analytics.Travelers</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/CheckinLink.html">CheckinLink</a></li>
-          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/FareSearch.html">FareSearch</a></li>
-          <li class="api apilevel-"><a href="../../../com/amadeus/resources/FareSearch.NumberOfSearches.html">FareSearch.NumberOfSearches</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/FlightDate.html">FlightDate</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/FlightDate.Price.html">FlightDate.Price</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/FlightDestination.html">FlightDestination</a></li>
@@ -224,6 +220,13 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Period.Analytics.html">Period.Analytics</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Period.Analytics.Travelers.html">Period.Analytics.Travelers</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Resource.html">Resource</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/Search.html">Search</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/Search.Analytics.html">Search.Analytics</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/Search.Searches.html">Search.Searches</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/SearchedDestination.html">SearchedDestination</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/SearchedDestination.Analytics.html">SearchedDestination.Analytics</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/SearchedDestination.NumberOfSearches.html">SearchedDestination.NumberOfSearches</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/SearchedDestination.Searches.html">SearchedDestination.Searches</a></li>
       </ul>
     </li>
               
@@ -329,7 +332,7 @@ Summary:
      
     
     class
-<h1>FareSearch</h1>
+<h1>Search</h1>
 
 
 
@@ -376,7 +379,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.FareSearch</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.Search</td>
     </tr>
     
 
@@ -391,16 +394,8 @@ Summary:
 <div class="jd-descr">
 
 
-<h2>Class Overview</h2>
-<p>An FareSearch object as returned by the FareSearch API.</p>
 
 
-
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../com/amadeus/travel/analytics/FareSearches.html#get()">get()</a></code></li>
-      </ul>
-  </div>
 
 
 </div><!-- jd-descr -->
@@ -439,8 +434,20 @@ Summary:
          
         
         class</td>
-      <td class="jd-linkcol"><a href="../../../com/amadeus/resources/FareSearch.NumberOfSearches.html">FareSearch.NumberOfSearches</a></td>
-      <td class="jd-descrcol" width="100%">An FareSearch-related object as returned by the FareSearch API.&nbsp;</td>
+      <td class="jd-linkcol"><a href="../../../com/amadeus/resources/Search.Analytics.html">Search.Analytics</a></td>
+      <td class="jd-descrcol" width="100%">An Search-related object as returned by the AirTraffic API.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol">
+        
+         
+         
+        
+        class</td>
+      <td class="jd-linkcol"><a href="../../../com/amadeus/resources/Search.Searches.html">Search.Searches</a></td>
+      <td class="jd-descrcol" width="100%">An Search-related object as returned by the AirTraffic API.&nbsp;</td>
     </tr>
     
     
@@ -485,10 +492,10 @@ Summary:
             
             
             
-            <a href="../../../com/amadeus/resources/FareSearch.NumberOfSearches.html">FareSearch.NumberOfSearches</a>
+            <a href="../../../com/amadeus/resources/Search.Analytics.html">Search.Analytics</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/FareSearch.html#getNumberOfSearches()">getNumberOfSearches</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/Search.html#getAnalytics()">getAnalytics</a></span>()
         
   </td></tr>
 
@@ -504,7 +511,7 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/FareSearch.html#getOrigin()">getOrigin</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/Search.html#getDestination()">getDestination</a></span>()
         
   </td></tr>
 
@@ -520,7 +527,7 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/FareSearch.html#getPeriod()">getPeriod</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/Search.html#getSubType()">getSubType</a></span>()
         
   </td></tr>
 
@@ -536,39 +543,7 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/FareSearch.html#getSourceCountry()">getSourceCountry</a></span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            String
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/FareSearch.html#getType()">getType</a></span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            String
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/FareSearch.html#toString()">toString</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/Search.html#toString()">toString</a></span>()
         
   </td></tr>
 
@@ -843,7 +818,7 @@ From class
 
 
 
-<a id="getNumberOfSearches()"></a>
+<a id="getAnalytics()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -853,9 +828,9 @@ From class
          
          
          
-        <a href="../../../com/amadeus/resources/FareSearch.NumberOfSearches.html">FareSearch.NumberOfSearches</a>
+        <a href="../../../com/amadeus/resources/Search.Analytics.html">Search.Analytics</a>
       </span>
-      <span class="sympad">getNumberOfSearches</span>
+      <span class="sympad">getAnalytics</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -874,7 +849,7 @@ From class
 </div>
 
 
-<a id="getOrigin()"></a>
+<a id="getDestination()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -886,7 +861,7 @@ From class
          
         String
       </span>
-      <span class="sympad">getOrigin</span>
+      <span class="sympad">getDestination</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -905,7 +880,7 @@ From class
 </div>
 
 
-<a id="getPeriod()"></a>
+<a id="getSubType()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -917,69 +892,7 @@ From class
          
         String
       </span>
-      <span class="sympad">getPeriod</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
-<a id="getSourceCountry()"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        String
-      </span>
-      <span class="sympad">getSourceCountry</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
-<a id="getType()"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        String
-      </span>
-      <span class="sympad">getType</span>
+      <span class="sympad">getSubType</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">

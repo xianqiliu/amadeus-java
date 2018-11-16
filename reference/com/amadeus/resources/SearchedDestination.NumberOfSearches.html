@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  Location.Analytics.Travelers
+  SearchedDestination.NumberOfSearches
 
 
 </title>
@@ -213,7 +213,7 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.Address.html">Location.Address</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.Analytics.html">Location.Analytics</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.Analytics.Flights.html">Location.Analytics.Flights</a></li>
-          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/Location.Analytics.Travelers.html">Location.Analytics.Travelers</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.Analytics.Travelers.html">Location.Analytics.Travelers</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.Distance.html">Location.Distance</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.GeoCode.html">Location.GeoCode</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Period.html">Period</a></li>
@@ -225,7 +225,7 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Search.Searches.html">Search.Searches</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/SearchedDestination.html">SearchedDestination</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/SearchedDestination.Analytics.html">SearchedDestination.Analytics</a></li>
-          <li class="api apilevel-"><a href="../../../com/amadeus/resources/SearchedDestination.NumberOfSearches.html">SearchedDestination.NumberOfSearches</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/SearchedDestination.NumberOfSearches.html">SearchedDestination.NumberOfSearches</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/SearchedDestination.Searches.html">SearchedDestination.Searches</a></li>
       </ul>
     </li>
@@ -322,7 +322,7 @@ Summary:
      
     
     class
-<h1>Location.Analytics.Travelers</h1>
+<h1>SearchedDestination.NumberOfSearches</h1>
 
 
 
@@ -355,7 +355,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.Location.Analytics.Travelers</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.SearchedDestination.NumberOfSearches</td>
     </tr>
     
 
@@ -371,13 +371,13 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>An Location-related object as returned by the Location API.</p>
+<p>An SearchedDestination-related object as returned by the SearchedByDestination API.</p>
 
 
 
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li>get()</li>
+      <ul class="nolist"><li>SearchedByDestination#get()</li>
       </ul>
   </div>
 
@@ -443,10 +443,10 @@ Summary:
             
             
             
-            Double
+            HashMap&lt;String,&nbsp;Integer&gt;
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/Location.Analytics.Travelers.html#getScore()">getScore</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/SearchedDestination.NumberOfSearches.html#getPerDaysInAdvance()">getPerDaysInAdvance</a></span>()
         
   </td></tr>
 
@@ -459,10 +459,26 @@ Summary:
             
             
             
+            HashMap&lt;String,&nbsp;Integer&gt;
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/amadeus/resources/SearchedDestination.NumberOfSearches.html#getPerTripDuration()">getPerTripDuration</a></span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/Location.Analytics.Travelers.html#toString()">toString</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/SearchedDestination.NumberOfSearches.html#toString()">toString</a></span>()
         
   </td></tr>
 
@@ -693,7 +709,7 @@ From class
 
 
 
-<a id="getScore()"></a>
+<a id="getPerDaysInAdvance()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -703,9 +719,40 @@ From class
          
          
          
-        Double
+        HashMap&lt;String,&nbsp;Integer&gt;
       </span>
-      <span class="sympad">getScore</span>
+      <span class="sympad">getPerDaysInAdvance</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="getPerTripDuration()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        HashMap&lt;String,&nbsp;Integer&gt;
+      </span>
+      <span class="sympad">getPerTripDuration</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
