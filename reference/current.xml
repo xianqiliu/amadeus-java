@@ -1085,8 +1085,8 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<method name="hotel"
- return="com.amadeus.shopping.Hotel"
+<method name="hotelOffer"
+ return="com.amadeus.shopping.HotelOffer"
  abstract="false"
  native="false"
  synchronized="false"
@@ -1130,6 +1130,16 @@
 </field>
 <field name="hotelOffers"
  type="com.amadeus.shopping.HotelOffers"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="hotelOffersByHotel"
+ type="com.amadeus.shopping.HotelOffersByHotel"
  transient="false"
  volatile="false"
  static="false"
@@ -2705,6 +2715,59 @@
 >
 </method>
 </class>
+<class name="HotelOffer.CheckInOutPolicy"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getCheckIn"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCheckInDescription"
+ return="com.amadeus.resources.HotelOffer.TextWithLanguageType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCheckOut"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCheckOutDescription"
+ return="com.amadeus.resources.HotelOffer.TextWithLanguageType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
 <class name="HotelOffer.Commission"
  extends="java.lang.Object"
  abstract="false"
@@ -2969,6 +3032,17 @@
  visibility="public"
 >
 </method>
+<method name="getHotelDistance"
+ return="com.amadeus.resources.HotelOffer.HotelDistance"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getHotelId"
  return="java.lang.String"
  abstract="false"
@@ -3067,6 +3141,48 @@
 >
 </method>
 <method name="getPhone"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="HotelOffer.HotelDistance"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getDescription"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDistance"
+ return="double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDistanceUnit"
  return="java.lang.String"
  abstract="false"
  native="false"
@@ -3247,6 +3363,17 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<method name="getCategory"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getUri"
  return="java.lang.String"
  abstract="false"
@@ -3268,17 +3395,6 @@
  visibility="public"
 >
 <method name="getBoardType"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getBookingCode"
  return="java.lang.String"
  abstract="false"
  native="false"
@@ -3463,6 +3579,17 @@
 >
 <method name="getCancellation"
  return="com.amadeus.resources.HotelOffer.CancellationPolicy"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCheckInOut"
+ return="com.amadeus.resources.HotelOffer.CheckInOutPolicy"
  abstract="false"
  native="false"
  synchronized="false"
@@ -4443,7 +4570,7 @@
 </exception>
 </method>
 </class>
-<class name="Hotel"
+<class name="HotelOffer"
  extends="java.lang.Object"
  abstract="false"
  static="false"
@@ -4451,8 +4578,8 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<method name="offer"
- return="com.amadeus.shopping.hotel.Offer"
+<method name="get"
+ return="com.amadeus.resources.HotelOffer"
  abstract="false"
  native="false"
  synchronized="false"
@@ -4461,19 +4588,24 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="offerId" type="java.lang.String">
+<parameter name="params" type="com.amadeus.Params">
 </parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
 </method>
-<field name="hotelOffers"
- type="com.amadeus.shopping.hotel.HotelOffers"
- transient="false"
- volatile="false"
+<method name="get"
+ return="com.amadeus.resources.HotelOffer"
+ abstract="false"
+ native="false"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
  visibility="public"
 >
-</field>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
 </class>
 <class name="HotelOffers"
  extends="java.lang.Object"
@@ -4512,10 +4644,7 @@
 </exception>
 </method>
 </class>
-</package>
-<package name="com.amadeus.shopping.hotel"
->
-<class name="HotelOffers"
+<class name="HotelOffersByHotel"
  extends="java.lang.Object"
  abstract="false"
  static="false"
@@ -4540,43 +4669,6 @@
 </method>
 <method name="get"
  return="com.amadeus.resources.HotelOffer"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
-</exception>
-</method>
-</class>
-<class name="Offer"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<method name="get"
- return="com.amadeus.resources.HotelOffer.Offer"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="params" type="com.amadeus.Params">
-</parameter>
-<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
-</exception>
-</method>
-<method name="get"
- return="com.amadeus.resources.HotelOffer.Offer"
  abstract="false"
  native="false"
  synchronized="false"
