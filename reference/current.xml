@@ -521,6 +521,17 @@
  visibility="public"
 >
 </field>
+<field name="PUT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;PUT&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="USER_AGENT"
  type="java.lang.String"
  transient="false"
