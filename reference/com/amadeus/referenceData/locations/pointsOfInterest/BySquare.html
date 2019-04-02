@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  Traveled
+  BySquare
 
 
 </title>
@@ -148,7 +148,7 @@
   <a href="../../../../../com/amadeus/referenceData/package-summary.html">com.amadeus.referenceData</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/amadeus/referenceData/locations/package-summary.html">com.amadeus.referenceData.locations</a></li>
-    <li class="api apilevel-">
+    <li class="selected api apilevel-">
   <a href="../../../../../com/amadeus/referenceData/locations/pointsOfInterest/package-summary.html">com.amadeus.referenceData.locations.pointsOfInterest</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/amadeus/referenceData/urls/package-summary.html">com.amadeus.referenceData.urls</a></li>
@@ -156,7 +156,7 @@
   <a href="../../../../../com/amadeus/resources/package-summary.html">com.amadeus.resources</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/amadeus/shopping/package-summary.html">com.amadeus.shopping</a></li>
-    <li class="selected api apilevel-">
+    <li class="api apilevel-">
   <a href="../../../../../com/amadeus/travel/analytics/airTraffic/package-summary.html">com.amadeus.travel.analytics.airTraffic</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -167,11 +167,7 @@
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../../com/amadeus/travel/analytics/airTraffic/Booked.html">Booked</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/amadeus/travel/analytics/airTraffic/BusiestPeriod.html">BusiestPeriod</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/amadeus/travel/analytics/airTraffic/Searched.html">Searched</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/amadeus/travel/analytics/airTraffic/SearchedByDestination.html">SearchedByDestination</a></li>
-          <li class="selected api apilevel-"><a href="../../../../../com/amadeus/travel/analytics/airTraffic/Traveled.html">Traveled</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../com/amadeus/referenceData/locations/pointsOfInterest/BySquare.html">BySquare</a></li>
       </ul>
     </li>
               
@@ -267,7 +263,7 @@ Summary:
      
     
     class
-<h1>Traveled</h1>
+<h1>BySquare</h1>
 
 
 
@@ -300,7 +296,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.travel.analytics.airTraffic.Traveled</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.referenceData.locations.pointsOfInterest.BySquare</td>
     </tr>
     
 
@@ -318,7 +314,7 @@ Summary:
 <h2>Class Overview</h2>
 <p><p>
    A namespaced client for the
-   <code>/v1/travel/analytics/air-traffic/traveled</code> endpoints.
+   <code>/v1/reference-data/locations/pois/by-square</code> endpoints.
  </p>
 
  <p>
@@ -327,7 +323,7 @@ Summary:
 
  <pre>
  Amadeus amadeus = Amadeus.builder("clientId", "secret").build();
- amadeus.travel.analytics.airTraffis.traveled;</pre>
+ amadeus.referenceData.locations.pointsOfInterest.bySquare;</pre>
 </p>
 
 
@@ -395,13 +391,14 @@ Summary:
             
             
             
-            <a href="../../../../../com/amadeus/resources/AirTraffic.html">AirTraffic[]</a>
+            <a href="../../../../../com/amadeus/resources/PointOfInterest.html">PointOfInterest[]</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/amadeus/travel/analytics/airTraffic/Traveled.html#get(com.amadeus.Params)">get</a></span>(<a href="../../../../../com/amadeus/Params.html">Params</a> params)
+        <span class="sympad"><a href="../../../../../com/amadeus/referenceData/locations/pointsOfInterest/BySquare.html#get(com.amadeus.Params)">get</a></span>(<a href="../../../../../com/amadeus/Params.html">Params</a> params)
         
         <div class="jd-descrdiv"><p>
-   Returns a list of air traffic reports.</div>
+   Returns a list of relevant point of interests within a square defined by
+   cardinal points.</div>
   
   </td></tr>
 
@@ -414,10 +411,10 @@ Summary:
             
             
             
-            <a href="../../../../../com/amadeus/resources/AirTraffic.html">AirTraffic[]</a>
+            <a href="../../../../../com/amadeus/resources/PointOfInterest.html">PointOfInterest[]</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/amadeus/travel/analytics/airTraffic/Traveled.html#get()">get</a></span>()
+        <span class="sympad"><a href="../../../../../com/amadeus/referenceData/locations/pointsOfInterest/BySquare.html#get()">get</a></span>()
         
         <div class="jd-descrdiv">Convenience method for calling <code>get</code> without any parameters.</div>
   
@@ -660,7 +657,7 @@ From class
          
          
          
-        <a href="../../../../../com/amadeus/resources/AirTraffic.html">AirTraffic[]</a>
+        <a href="../../../../../com/amadeus/resources/PointOfInterest.html">PointOfInterest[]</a>
       </span>
       <span class="sympad">get</span>
       <span class="normal">(<a href="../../../../../com/amadeus/Params.html">Params</a> params)</span>
@@ -676,13 +673,16 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p><p>
-   Returns a list of air traffic reports.
+   Returns a list of relevant point of interests within a square defined by
+   cardinal points.
  </p>
 
  <pre>
- amadeus.travel.analytics.airTraffic.traveled.get(Params
-   .with("originCityCode", "LHR")
-   .and("period", "2017-03"));</pre></p></div>
+ amadeus.referenceData.locations.pointsOfInterest.bySquare.get(Params
+   .with("north", 41.397158)
+   .and("west", 2.160873)
+   .and("south", 41.394582)
+   .and("east", 2.177181));</pre></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -721,7 +721,7 @@ From class
          
          
          
-        <a href="../../../../../com/amadeus/resources/AirTraffic.html">AirTraffic[]</a>
+        <a href="../../../../../com/amadeus/resources/PointOfInterest.html">PointOfInterest[]</a>
       </span>
       <span class="sympad">get</span>
       <span class="normal">()</span>
@@ -748,7 +748,7 @@ From class
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../../../com/amadeus/travel/analytics/airTraffic/Traveled.html#get()">get()</a></code></li>
+      <ul class="nolist"><li>PointsOfInterest#get()</li>
       </ul>
   </div>
 

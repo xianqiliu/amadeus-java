@@ -2,6 +2,7 @@ com.amadeus
 com.amadeus.exceptions
 com.amadeus.referenceData
 com.amadeus.referenceData.locations
+com.amadeus.referenceData.locations.pointsOfInterest
 com.amadeus.referenceData.urls
 com.amadeus.resources
 com.amadeus.shopping
