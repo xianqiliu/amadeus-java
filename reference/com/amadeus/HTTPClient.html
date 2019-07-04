@@ -157,6 +157,8 @@
     <li class="api apilevel-">
   <a href="../../com/amadeus/shopping/package-summary.html">com.amadeus.shopping</a></li>
     <li class="api apilevel-">
+  <a href="../../com/amadeus/shopping/flightOffers/package-summary.html">com.amadeus.shopping.flightOffers</a></li>
+    <li class="api apilevel-">
   <a href="../../com/amadeus/travel/analytics/airTraffic/package-summary.html">com.amadeus.travel.analytics.airTraffic</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -585,9 +587,10 @@ Summary:
             <a href="../../com/amadeus/Response.html">Response</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../com/amadeus/HTTPClient.html#post(java.lang.String)">post</a></span>(String path)
+        <span class="sympad"><a href="../../com/amadeus/HTTPClient.html#post(java.lang.String, java.lang.String)">post</a></span>(String path, String body)
         
-        <div class="jd-descrdiv">A helper module for making generic POST requests calls.</div>
+        <div class="jd-descrdiv"><p>
+ A helper module for making generic POST requests calls.</div>
   
   </td></tr>
 
@@ -603,7 +606,44 @@ Summary:
             <a href="../../com/amadeus/Response.html">Response</a>
         </td>
         <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../com/amadeus/HTTPClient.html#post(java.lang.String)">post</a></span>(String path)
+        
+        <div class="jd-descrdiv">A helper module for making generic POST requests calls.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../com/amadeus/Response.html">Response</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../com/amadeus/HTTPClient.html#post(java.lang.String, com.amadeus.Params)">post</a></span>(String path, <a href="../../com/amadeus/Params.html">Params</a> params)
+        
+        <div class="jd-descrdiv"><p>
+ A helper module for making generic POST requests calls.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../com/amadeus/Response.html">Response</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../com/amadeus/HTTPClient.html#post(java.lang.String, com.google.gson.JsonObject)">post</a></span>(String path, JsonObject body)
         
         <div class="jd-descrdiv"><p>
  A helper module for making generic POST requests calls.</div>
@@ -1349,6 +1389,80 @@ From class
 </div>
 
 
+<a id="post(java.lang.String, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../com/amadeus/Response.html">Response</a>
+      </span>
+      <span class="sympad">post</span>
+      <span class="normal">(String path, String body)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><p>
+ A helper module for making generic POST requests calls. It is used by
+ every namespaced API POST method.
+ </p>
+
+ <pre>
+ amadeus.foo.bar.post(Params.with("airline", "1X"));
+ </pre>
+
+ <p>
+ It can be used to make any generic API call that is automatically
+ authenticated using your API credentials:
+ </p>
+
+ <pre>
+ amadeus.post("/v1/foo/bar", Params.with("airline", "1X"));
+ </pre></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>path</th>
+          <td>The full path for the API call</td>
+        </tr>
+        <tr>
+          <th>body</th>
+          <td>The optional POST params to pass to the API</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a Response object containing the status code, body, and parsed data.
+</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../com/amadeus/exceptions/ResponseException.html">ResponseException</a></td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <a id="post(java.lang.String)"></a>
 
 <div class="jd-details api apilevel-"> 
@@ -1447,6 +1561,76 @@ From class
         <tr>
           <th>params</th>
           <td>The optional POST params to pass to the API</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a Response object containing the status code, body, and parsed data.
+</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../com/amadeus/exceptions/ResponseException.html">ResponseException</a></td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="post(java.lang.String, com.google.gson.JsonObject)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../com/amadeus/Response.html">Response</a>
+      </span>
+      <span class="sympad">post</span>
+      <span class="normal">(String path, JsonObject body)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><p>
+ A helper module for making generic POST requests calls. It is used by
+ every namespaced API POST method.
+ </p>
+
+ <p>
+ It can be used to make any generic API call that is automatically
+ authenticated using your API credentials:
+ </p>
+
+ <pre>
+ amadeus.post("/v1/foo/bar", { "foo" : "bar" })
+ </pre></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>path</th>
+          <td>The full path for the API call</td>
+        </tr>
+        <tr>
+          <th>body</th>
+          <td>The POST JsonObject body to pass to the API</td>
         </tr>
       </table>
   </div>

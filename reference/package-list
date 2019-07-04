@@ -6,5 +6,6 @@ com.amadeus.referenceData.locations.pointsOfInterest
 com.amadeus.referenceData.urls
 com.amadeus.resources
 com.amadeus.shopping
+com.amadeus.shopping.flightOffers
 com.amadeus.travel.analytics.airTraffic
 

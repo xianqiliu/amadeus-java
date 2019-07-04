@@ -95,11 +95,13 @@ var DATA = [
       { id:93, label:"com.amadeus.shopping.FlightOffers", link:"com/amadeus/shopping/FlightOffers.html", type:"class" },
       { id:94, label:"com.amadeus.shopping.HotelOffers", link:"com/amadeus/shopping/HotelOffers.html", type:"class" },
       { id:95, label:"com.amadeus.shopping.HotelOffersByHotel", link:"com/amadeus/shopping/HotelOffersByHotel.html", type:"class" },
-      { id:96, label:"com.amadeus.travel.analytics.airTraffic", link:"com/amadeus/travel/analytics/airTraffic/package-summary.html", type:"package" },
-      { id:97, label:"com.amadeus.travel.analytics.airTraffic.Booked", link:"com/amadeus/travel/analytics/airTraffic/Booked.html", type:"class" },
-      { id:98, label:"com.amadeus.travel.analytics.airTraffic.BusiestPeriod", link:"com/amadeus/travel/analytics/airTraffic/BusiestPeriod.html", type:"class" },
-      { id:99, label:"com.amadeus.travel.analytics.airTraffic.Searched", link:"com/amadeus/travel/analytics/airTraffic/Searched.html", type:"class" },
-      { id:100, label:"com.amadeus.travel.analytics.airTraffic.SearchedByDestination", link:"com/amadeus/travel/analytics/airTraffic/SearchedByDestination.html", type:"class" },
-      { id:101, label:"com.amadeus.travel.analytics.airTraffic.Traveled", link:"com/amadeus/travel/analytics/airTraffic/Traveled.html", type:"class" }
+      { id:96, label:"com.amadeus.shopping.flightOffers", link:"com/amadeus/shopping/flightOffers/package-summary.html", type:"package" },
+      { id:97, label:"com.amadeus.shopping.flightOffers.Prediction", link:"com/amadeus/shopping/flightOffers/Prediction.html", type:"class" },
+      { id:98, label:"com.amadeus.travel.analytics.airTraffic", link:"com/amadeus/travel/analytics/airTraffic/package-summary.html", type:"package" },
+      { id:99, label:"com.amadeus.travel.analytics.airTraffic.Booked", link:"com/amadeus/travel/analytics/airTraffic/Booked.html", type:"class" },
+      { id:100, label:"com.amadeus.travel.analytics.airTraffic.BusiestPeriod", link:"com/amadeus/travel/analytics/airTraffic/BusiestPeriod.html", type:"class" },
+      { id:101, label:"com.amadeus.travel.analytics.airTraffic.Searched", link:"com/amadeus/travel/analytics/airTraffic/Searched.html", type:"class" },
+      { id:102, label:"com.amadeus.travel.analytics.airTraffic.SearchedByDestination", link:"com/amadeus/travel/analytics/airTraffic/SearchedByDestination.html", type:"class" },
+      { id:103, label:"com.amadeus.travel.analytics.airTraffic.Traveled", link:"com/amadeus/travel/analytics/airTraffic/Traveled.html", type:"class" }
 
     ];

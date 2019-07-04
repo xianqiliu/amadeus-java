@@ -15,6 +15,8 @@ var NAVTREE_DATA =
 , "" ] ]
 , "" ], [ "com.amadeus.shopping", "com/amadeus/shopping/package-summary.html", [ [ "Classes", null, [ [ "FlightDates", "com/amadeus/shopping/FlightDates.html", null, "" ], [ "FlightDestinations", "com/amadeus/shopping/FlightDestinations.html", null, "" ], [ "FlightOffers", "com/amadeus/shopping/FlightOffers.html", null, "" ], [ "HotelOffers", "com/amadeus/shopping/HotelOffers.html", null, "" ], [ "HotelOffersByHotel", "com/amadeus/shopping/HotelOffersByHotel.html", null, "" ] ]
 , "" ] ]
+, "" ], [ "com.amadeus.shopping.flightOffers", "com/amadeus/shopping/flightOffers/package-summary.html", [ [ "Classes", null, [ [ "Prediction", "com/amadeus/shopping/flightOffers/Prediction.html", null, "" ] ]
+, "" ] ]
 , "" ], [ "com.amadeus.travel.analytics.airTraffic", "com/amadeus/travel/analytics/airTraffic/package-summary.html", [ [ "Classes", null, [ [ "Booked", "com/amadeus/travel/analytics/airTraffic/Booked.html", null, "" ], [ "BusiestPeriod", "com/amadeus/travel/analytics/airTraffic/BusiestPeriod.html", null, "" ], [ "Searched", "com/amadeus/travel/analytics/airTraffic/Searched.html", null, "" ], [ "SearchedByDestination", "com/amadeus/travel/analytics/airTraffic/SearchedByDestination.html", null, "" ], [ "Traveled", "com/amadeus/travel/analytics/airTraffic/Traveled.html", null, "" ] ]
 , "" ] ]
 , "" ] ]

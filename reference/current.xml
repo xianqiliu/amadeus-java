@@ -717,6 +717,40 @@
 <exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
 </exception>
 </method>
+<method name="post"
+ return="com.amadeus.Response"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="body" type="java.lang.String">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.Response"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="body" type="com.google.gson.JsonObject">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
 <method name="previous"
  return="com.amadeus.Response"
  abstract="false"
@@ -870,6 +904,17 @@
 >
 </method>
 <method name="getBearerToken"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getBody"
  return="java.lang.String"
  abstract="false"
  native="false"
@@ -2080,6 +2125,17 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<method name="getChoiceProbability"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getId"
  return="java.lang.String"
  abstract="false"
@@ -4783,6 +4839,16 @@
 <exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
 </exception>
 </method>
+<field name="prediction"
+ type="com.amadeus.shopping.flightOffers.Prediction"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 <class name="HotelOffer"
  extends="java.lang.Object"
@@ -4883,6 +4949,61 @@
 </method>
 <method name="get"
  return="com.amadeus.resources.HotelOffer"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+</class>
+</package>
+<package name="com.amadeus.shopping.flightOffers"
+>
+<class name="Prediction"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="post"
+ return="com.amadeus.resources.FlightOffer[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="com.google.gson.JsonObject">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightOffer[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="java.lang.String">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightOffer[]"
  abstract="false"
  native="false"
  synchronized="false"
