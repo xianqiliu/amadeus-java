@@ -41,7 +41,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;3.2.0&quot;"
+ value="&quot;3.3.0&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -5763,16 +5763,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<constructor name="FlightOffersSearch"
- type="com.amadeus.shopping.FlightOffersSearch"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="client" type="com.amadeus.Amadeus">
-</parameter>
-</constructor>
 <method name="get"
  return="com.amadeus.resources.FlightOfferSearch[]"
  abstract="false"
@@ -5785,6 +5775,62 @@
 >
 <parameter name="params" type="com.amadeus.Params">
 </parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="get"
+ return="com.amadeus.resources.FlightOfferSearch[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightOfferSearch[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="com.google.gson.JsonObject">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightOfferSearch[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="java.lang.String">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightOfferSearch[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
 <exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
 </exception>
 </method>
