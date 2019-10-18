@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  CheckinLink
+  HotelSentiment
 
 
 </title>
@@ -176,7 +176,7 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/AirTraffic.Analytics.html">AirTraffic.Analytics</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/AirTraffic.Analytics.Flights.html">AirTraffic.Analytics.Flights</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/AirTraffic.Analytics.Travelers.html">AirTraffic.Analytics.Travelers</a></li>
-          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/CheckinLink.html">CheckinLink</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/CheckinLink.html">CheckinLink</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/FlightDate.html">FlightDate</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/FlightDate.Price.html">FlightDate.Price</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/FlightDestination.html">FlightDestination</a></li>
@@ -226,7 +226,7 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.RateFamily.html">HotelOffer.RateFamily</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.RoomDetails.html">HotelOffer.RoomDetails</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.TextWithLanguageType.html">HotelOffer.TextWithLanguageType</a></li>
-          <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelSentiment.html">HotelSentiment</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/HotelSentiment.html">HotelSentiment</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelSentiment.Sentiment.html">HotelSentiment.Sentiment</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.html">Location</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.Address.html">Location.Address</a></li>
@@ -311,6 +311,8 @@
 
 Summary:
 
+  <a href="#nestedclasses">Nested Classes</a>
+  
 
 
 
@@ -321,7 +323,8 @@ Summary:
 
 
 
-  <a href="#pubmethods">Methods</a>
+
+  &#124; <a href="#pubmethods">Methods</a>
   
 
 
@@ -350,7 +353,7 @@ Summary:
      
     
     class
-<h1>CheckinLink</h1>
+<h1>HotelSentiment</h1>
 
 
 
@@ -397,7 +400,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.CheckinLink</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.HotelSentiment</td>
     </tr>
     
 
@@ -413,13 +416,13 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>An CheckinLink object as returned by the CheckinLink API.</p>
+<p>An HotelSentiment object as returned by the Hotel Ratings API.</p>
 
 
 
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../com/amadeus/referenceData/urls/CheckinLinks.html#get()">get()</a></code></li>
+      <ul class="nolist"><li>HotelSentiments#get()</li>
       </ul>
   </div>
 
@@ -446,6 +449,27 @@ Summary:
 
 <h2>Summary</h2>
 
+
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
+
+
+  
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol">
+        
+         
+         
+        
+        class</td>
+      <td class="jd-linkcol"><a href="../../../com/amadeus/resources/HotelSentiment.Sentiment.html">HotelSentiment.Sentiment</a></td>
+      <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+
+</table>
 
 
 
@@ -488,7 +512,7 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/CheckinLink.html#getChannel()">getChannel</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelSentiment.html#getHotelId()">getHotelId</a></span>()
         
   </td></tr>
 
@@ -501,10 +525,42 @@ Summary:
             
             
             
-            String
+            int
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/CheckinLink.html#getHref()">getHref</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelSentiment.html#getNumberOfReviews()">getNumberOfReviews</a></span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelSentiment.html#getOverallRating()">getOverallRating</a></span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../../com/amadeus/resources/HotelSentiment.Sentiment.html">HotelSentiment.Sentiment</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelSentiment.html#getSentiments()">getSentiments</a></span>()
         
   </td></tr>
 
@@ -520,7 +576,7 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/CheckinLink.html#getId()">getId</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelSentiment.html#getType()">getType</a></span>()
         
   </td></tr>
 
@@ -536,23 +592,7 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/CheckinLink.html#getType()">getType</a></span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            String
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/CheckinLink.html#toString()">toString</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelSentiment.html#toString()">toString</a></span>()
         
   </td></tr>
 
@@ -827,7 +867,7 @@ From class
 
 
 
-<a id="getChannel()"></a>
+<a id="getHotelId()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -839,7 +879,7 @@ From class
          
         String
       </span>
-      <span class="sympad">getChannel</span>
+      <span class="sympad">getHotelId</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -858,7 +898,7 @@ From class
 </div>
 
 
-<a id="getHref()"></a>
+<a id="getNumberOfReviews()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -868,9 +908,9 @@ From class
          
          
          
-        String
+        int
       </span>
-      <span class="sympad">getHref</span>
+      <span class="sympad">getNumberOfReviews</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -889,7 +929,7 @@ From class
 </div>
 
 
-<a id="getId()"></a>
+<a id="getOverallRating()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -899,9 +939,40 @@ From class
          
          
          
-        String
+        int
       </span>
-      <span class="sympad">getId</span>
+      <span class="sympad">getOverallRating</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="getSentiments()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/amadeus/resources/HotelSentiment.Sentiment.html">HotelSentiment.Sentiment</a>
+      </span>
+      <span class="sympad">getSentiments</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
