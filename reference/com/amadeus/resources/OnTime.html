@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  HotelOffer.CheckInOutPolicy
+  OnTime
 
 
 </title>
@@ -212,7 +212,7 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.AddressType.html">HotelOffer.AddressType</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.BaseTotalAmount.html">HotelOffer.BaseTotalAmount</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.CancellationPolicy.html">HotelOffer.CancellationPolicy</a></li>
-          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.CheckInOutPolicy.html">HotelOffer.CheckInOutPolicy</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.CheckInOutPolicy.html">HotelOffer.CheckInOutPolicy</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.Commission.html">HotelOffer.Commission</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.EstimatedRoomType.html">HotelOffer.EstimatedRoomType</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.GuaranteePolicy.html">HotelOffer.GuaranteePolicy</a></li>
@@ -240,7 +240,7 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.Analytics.Travelers.html">Location.Analytics.Travelers</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.Distance.html">Location.Distance</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Location.GeoCode.html">Location.GeoCode</a></li>
-          <li class="api apilevel-"><a href="../../../com/amadeus/resources/OnTime.html">OnTime</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/OnTime.html">OnTime</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Period.html">Period</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Period.Analytics.html">Period.Analytics</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Period.Analytics.Travelers.html">Period.Analytics.Travelers</a></li>
@@ -304,6 +304,13 @@
   
   
 
+  
+   
+  
+  
+  
+  
+
 
 <div class="sum-details-links">
 
@@ -349,12 +356,16 @@ Summary:
      
     
     class
-<h1>HotelOffer.CheckInOutPolicy</h1>
+<h1>OnTime</h1>
 
 
 
   
-    extends Object<br/>
+  
+  
+
+  
+    extends <a href="../../../com/amadeus/resources/Resource.html">Resource</a><br/>
   
   
   
@@ -374,7 +385,7 @@ Summary:
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+        <td colspan="3" class="jd-inheritance-class-cell">java.lang.Object</td>
     </tr>
     
 
@@ -382,7 +393,17 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.HotelOffer.CheckInOutPolicy</td>
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../com/amadeus/resources/Resource.html">com.amadeus.resources.Resource</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.OnTime</td>
     </tr>
     
 
@@ -398,13 +419,13 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>An HotelOffer-related object as returned by the HotelOffers API.</p>
+<p>An OnTime object as returned by the AirportOnTime API.</p>
 
 
 
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../com/amadeus/shopping/HotelOffers.html#get()">get()</a></code></li>
+      <ul class="nolist"><li><code><a href="../../../com/amadeus/airport/predictions/AirportOnTime.html#get()">get()</a></code></li>
       </ul>
   </div>
 
@@ -473,7 +494,7 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/HotelOffer.CheckInOutPolicy.html#getCheckIn()">getCheckIn</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/OnTime.html#getId()">getId</a></span>()
         
   </td></tr>
 
@@ -486,10 +507,10 @@ Summary:
             
             
             
-            <a href="../../../com/amadeus/resources/HotelOffer.TextWithLanguageType.html">HotelOffer.TextWithLanguageType</a>
+            String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/HotelOffer.CheckInOutPolicy.html#getCheckInDescription()">getCheckInDescription</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/OnTime.html#getProbability()">getProbability</a></span>()
         
   </td></tr>
 
@@ -505,7 +526,7 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/HotelOffer.CheckInOutPolicy.html#getCheckOut()">getCheckOut</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/OnTime.html#getResult()">getResult</a></span>()
         
   </td></tr>
 
@@ -518,10 +539,10 @@ Summary:
             
             
             
-            <a href="../../../com/amadeus/resources/HotelOffer.TextWithLanguageType.html">HotelOffer.TextWithLanguageType</a>
+            String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/HotelOffer.CheckInOutPolicy.html#getCheckOutDescription()">getCheckOutDescription</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/OnTime.html#getSubType()">getSubType</a></span>()
         
   </td></tr>
 
@@ -537,7 +558,23 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/HotelOffer.CheckInOutPolicy.html#toString()">toString</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/OnTime.html#getType()">getType</a></span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            String
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/amadeus/resources/OnTime.html#toString()">toString</a></span>()
         
   </td></tr>
 
@@ -555,6 +592,50 @@ Summary:
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.amadeus.resources.Resource" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.amadeus.resources.Resource-trigger"
+          src="../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="../../../com/amadeus/resources/Resource.html">com.amadeus.resources.Resource</a>
+
+<div id="inherited-methods-com.amadeus.resources.Resource">
+  <div id="inherited-methods-com.amadeus.resources.Resource-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.amadeus.resources.Resource-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../../com/amadeus/Response.html">Response</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/amadeus/resources/Resource.html#getResponse()">getResponse</a></span>()
+        
+        <div class="jd-descrdiv">The original response that this object is populated from.</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
 
 
 <tr class="api apilevel-" >
@@ -768,7 +849,7 @@ From class
 
 
 
-<a id="getCheckIn()"></a>
+<a id="getId()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -780,7 +861,7 @@ From class
          
         String
       </span>
-      <span class="sympad">getCheckIn</span>
+      <span class="sympad">getId</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -799,38 +880,7 @@ From class
 </div>
 
 
-<a id="getCheckInDescription()"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        <a href="../../../com/amadeus/resources/HotelOffer.TextWithLanguageType.html">HotelOffer.TextWithLanguageType</a>
-      </span>
-      <span class="sympad">getCheckInDescription</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
-<a id="getCheckOut()"></a>
+<a id="getProbability()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -842,7 +892,7 @@ From class
          
         String
       </span>
-      <span class="sympad">getCheckOut</span>
+      <span class="sympad">getProbability</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -861,7 +911,7 @@ From class
 </div>
 
 
-<a id="getCheckOutDescription()"></a>
+<a id="getResult()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -871,9 +921,71 @@ From class
          
          
          
-        <a href="../../../com/amadeus/resources/HotelOffer.TextWithLanguageType.html">HotelOffer.TextWithLanguageType</a>
+        String
       </span>
-      <span class="sympad">getCheckOutDescription</span>
+      <span class="sympad">getResult</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="getSubType()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">getSubType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="getType()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">getType</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
