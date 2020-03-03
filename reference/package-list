@@ -1,5 +1,6 @@
 com.amadeus
 com.amadeus.airport.predictions
+com.amadeus.booking
 com.amadeus.ereputation
 com.amadeus.exceptions
 com.amadeus.referenceData
