@@ -12,4 +12,5 @@ com.amadeus.shopping
 com.amadeus.shopping.flightOffers
 com.amadeus.travel.analytics.airTraffic
 com.amadeus.travel.predictions
+examples.flight.createorders
 
