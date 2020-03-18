@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  AirportOnTime
+  TripPurpose
 
 
 </title>
@@ -142,7 +142,7 @@
                 
     <li class="api apilevel-">
   <a href="../../../../com/amadeus/package-summary.html">com.amadeus</a></li>
-    <li class="selected api apilevel-">
+    <li class="api apilevel-">
   <a href="../../../../com/amadeus/airport/predictions/package-summary.html">com.amadeus.airport.predictions</a></li>
     <li class="api apilevel-">
   <a href="../../../../com/amadeus/booking/package-summary.html">com.amadeus.booking</a></li>
@@ -168,7 +168,7 @@
   <a href="../../../../com/amadeus/shopping/flightOffers/package-summary.html">com.amadeus.shopping.flightOffers</a></li>
     <li class="api apilevel-">
   <a href="../../../../com/amadeus/travel/analytics/airTraffic/package-summary.html">com.amadeus.travel.analytics.airTraffic</a></li>
-    <li class="api apilevel-">
+    <li class="selected api apilevel-">
   <a href="../../../../com/amadeus/travel/predictions/package-summary.html">com.amadeus.travel.predictions</a></li>
     <li class="api apilevel-">
   <a href="../../../../examples/flight/createorders/package-summary.html">examples.flight.createorders</a></li>
@@ -183,7 +183,8 @@
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="selected api apilevel-"><a href="../../../../com/amadeus/airport/predictions/AirportOnTime.html">AirportOnTime</a></li>
+          <li class="api apilevel-"><a href="../../../../com/amadeus/travel/predictions/FlightDelay.html">FlightDelay</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/amadeus/travel/predictions/TripPurpose.html">TripPurpose</a></li>
       </ul>
     </li>
               
@@ -279,7 +280,7 @@ Summary:
      
     
     class
-<h1>AirportOnTime</h1>
+<h1>TripPurpose</h1>
 
 
 
@@ -312,7 +313,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.airport.predictions.AirportOnTime</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.travel.predictions.TripPurpose</td>
     </tr>
     
 
@@ -329,17 +330,17 @@ Summary:
 
 <h2>Class Overview</h2>
 <p><p>
-   A namespaced client for the
-   <code>/v1/airport/predictions/on-time</code> endpoints.
+ A namespaced client for the
+ <code>/v1/travel/predictions/trip-purpose</code> endpoints.
  </p>
 
  <p>
-   Access via the Amadeus client object.
+ Access via the Amadeus client object.
  </p>
 
  <pre>
  Amadeus amadeus = Amadeus.builder("clientId", "secret").build();
- amadeus.airport.predictions.onTime;</pre>
+ amadeus.travel.predictions.tripPurpose;</pre>
 </p>
 
 
@@ -410,10 +411,10 @@ Summary:
             <a href="../../../../com/amadeus/resources/Prediction.html">Prediction</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/amadeus/airport/predictions/AirportOnTime.html#get(com.amadeus.Params)">get</a></span>(<a href="../../../../com/amadeus/Params.html">Params</a> params)
+        <span class="sympad"><a href="../../../../com/amadeus/travel/predictions/TripPurpose.html#get(com.amadeus.Params)">get</a></span>(<a href="../../../../com/amadeus/Params.html">Params</a> params)
         
         <div class="jd-descrdiv"><p>
-   Returns a percentage of on-time flight from a given airport.</div>
+ Returns a trip purpose prediction.</div>
   
   </td></tr>
 
@@ -429,7 +430,7 @@ Summary:
             <a href="../../../../com/amadeus/resources/Prediction.html">Prediction</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/amadeus/airport/predictions/AirportOnTime.html#get()">get</a></span>()
+        <span class="sympad"><a href="../../../../com/amadeus/travel/predictions/TripPurpose.html#get()">get</a></span>()
         
         <div class="jd-descrdiv">Convenience method for calling <code>get</code> without any parameters.</div>
   
@@ -688,14 +689,16 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p><p>
-   Returns a percentage of on-time flight from a given airport.
+ Returns a trip purpose prediction.
  </p>
 
  <pre>
- OnTime airportOnTime = amadeus.airport.predictions.onTime.get(Params
-     .with("airportCode", "NCE")
-     .and("date", "2020-09-01"));
- </pre></p></div>
+ amadeus.travel.predictions.tripPurpose.get(Params
+   .with("originLocationCode", "NYC")
+   .and("destinationLocationCode", "MAD")
+   .and("departureDate", "2020-08-01")
+   .and("returnDate", "2020-08-12"));
+   </pre></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -761,7 +764,7 @@ From class
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../../com/amadeus/airport/predictions/AirportOnTime.html#get()">get()</a></code></li>
+      <ul class="nolist"><li><code><a href="../../../../com/amadeus/travel/predictions/TripPurpose.html#get()">get()</a></code></li>
       </ul>
   </div>
 

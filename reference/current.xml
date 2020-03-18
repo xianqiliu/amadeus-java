@@ -1414,7 +1414,7 @@
 >
 </field>
 <field name="predictions"
- type="com.amadeus.travel.predictions.Predictions"
+ type="com.amadeus.travel.Predictions"
  transient="false"
  volatile="false"
  static="false"
@@ -1436,7 +1436,7 @@
  visibility="public"
 >
 <method name="get"
- return="com.amadeus.resources.OnTime"
+ return="com.amadeus.resources.Prediction"
  abstract="false"
  native="false"
  synchronized="false"
@@ -1451,7 +1451,7 @@
 </exception>
 </method>
 <method name="get"
- return="com.amadeus.resources.OnTime"
+ return="com.amadeus.resources.Prediction"
  abstract="false"
  native="false"
  synchronized="false"
@@ -2362,70 +2362,6 @@
 >
 </method>
 <method name="getId"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getType"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-</class>
-<class name="Delay"
- extends="com.amadeus.resources.Resource"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<method name="getId"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getProbability"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getResult"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getSubType"
  return="java.lang.String"
  abstract="false"
  native="false"
@@ -6148,70 +6084,6 @@
 >
 </method>
 </class>
-<class name="OnTime"
- extends="com.amadeus.resources.Resource"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<method name="getId"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getProbability"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getResult"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getSubType"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getType"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-</class>
 <class name="Period"
  extends="com.amadeus.resources.Resource"
  abstract="false"
@@ -6390,6 +6262,70 @@
 </method>
 <method name="getLongitude"
  return="double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="Prediction"
+ extends="com.amadeus.resources.Resource"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getProbability"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getResult"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSubType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="java.lang.String"
  abstract="false"
  native="false"
  synchronized="false"
@@ -7724,6 +7660,38 @@
 </method>
 </class>
 </package>
+<package name="com.amadeus.travel"
+>
+<class name="Predictions"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<field name="flightDelay"
+ type="com.amadeus.travel.predictions.FlightDelay"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="tripPurpose"
+ type="com.amadeus.travel.predictions.TripPurpose"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
 <package name="com.amadeus.travel.analytics"
 >
 <class name="AirTraffic"
@@ -7932,7 +7900,7 @@
  visibility="public"
 >
 <method name="get"
- return="com.amadeus.resources.Delay[]"
+ return="com.amadeus.resources.Prediction[]"
  abstract="false"
  native="false"
  synchronized="false"
@@ -7947,7 +7915,7 @@
 </exception>
 </method>
 <method name="get"
- return="com.amadeus.resources.Delay[]"
+ return="com.amadeus.resources.Prediction[]"
  abstract="false"
  native="false"
  synchronized="false"
@@ -7960,7 +7928,7 @@
 </exception>
 </method>
 </class>
-<class name="Predictions"
+<class name="TripPurpose"
  extends="java.lang.Object"
  abstract="false"
  static="false"
@@ -7968,16 +7936,34 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<field name="flightDelay"
- type="com.amadeus.travel.predictions.FlightDelay"
- transient="false"
- volatile="false"
+<method name="get"
+ return="com.amadeus.resources.Prediction"
+ abstract="false"
+ native="false"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
  visibility="public"
 >
-</field>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="get"
+ return="com.amadeus.resources.Prediction"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
 </class>
 </package>
 <package name="examples.flight.createorders"
