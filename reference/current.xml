@@ -891,6 +891,44 @@
 <exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
 </exception>
 </method>
+<method name="post"
+ return="com.amadeus.Response"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<parameter name="body" type="com.google.gson.JsonObject">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.Response"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<parameter name="body" type="java.lang.String">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
 <method name="previous"
  return="com.amadeus.Response"
  abstract="false"
@@ -4087,6 +4125,295 @@
 </method>
 <method name="getName"
  return="com.amadeus.resources.FlightOrder.Name"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="FlightPayment"
+ extends="com.amadeus.resources.Resource"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getBinNumber"
+ return="java.lang.Integer"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getBrand"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getFlightOfferIds"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="FlightPrice"
+ extends="com.amadeus.resources.Resource"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getBookingRequirements"
+ return="com.amadeus.resources.FlightPrice.BookingRequirements"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getFlightOffers"
+ return="com.amadeus.resources.FlightOfferSearch[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="FlightPrice.BookingRequirements"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getEmailAddressRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getInvoiceAddressRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getMailingAddressRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getMobilePhoneNumberRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPhoneCountryCodeRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPhoneNumberRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPostalCodeRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTravelerRequirements"
+ return="com.amadeus.resources.FlightPrice.PassengerConditions[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="FlightPrice.PassengerConditions"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getAirFranceDiscountRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDateOfBirthRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDocumentIssuanceCityRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDocumentRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getGenderRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getRedressRequiredIfAny"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getResidenceRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSpanishResidentDiscountRequired"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTravelerId"
+ return="java.lang.String"
  abstract="false"
  native="false"
  synchronized="false"
@@ -7412,6 +7739,16 @@
 <exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
 </exception>
 </method>
+<field name="pricing"
+ type="com.amadeus.shopping.flightOffers.Pricing"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 <class name="HotelOffer"
  extends="java.lang.Object"
@@ -7647,6 +7984,141 @@
 </method>
 <method name="post"
  return="com.amadeus.resources.FlightOffer[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+</class>
+<class name="Pricing"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="post"
+ return="com.amadeus.resources.FlightPrice"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="com.google.gson.JsonObject">
+</parameter>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightPrice"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="java.lang.String">
+</parameter>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightPrice"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="com.google.gson.JsonObject">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightPrice"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="java.lang.String">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightPrice"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="flightOffersSearches" type="com.amadeus.resources.FlightOfferSearch[]">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightPrice"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="flightOffersSearches" type="com.amadeus.resources.FlightOfferSearch[]">
+</parameter>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightPrice"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="flightOffersSearches" type="com.amadeus.resources.FlightOfferSearch[]">
+</parameter>
+<parameter name="flightPayment" type="com.amadeus.resources.FlightPayment">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.FlightPrice"
  abstract="false"
  native="false"
  synchronized="false"
@@ -7978,6 +8450,41 @@
 >
 <constructor name="FlightCreateOrders"
  type="examples.flight.createorders.FlightCreateOrders"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="main"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="args" type="java.lang.String[]">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+</class>
+</package>
+<package name="examples.flight.offers"
+>
+<class name="FlightOffersPrice"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="FlightOffersPrice"
+ type="examples.flight.offers.FlightOffersPrice"
  static="false"
  final="false"
  deprecated="not deprecated"
