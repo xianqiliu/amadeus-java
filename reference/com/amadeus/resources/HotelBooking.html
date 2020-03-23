@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  HotelOffer.BaseTotalAmount
+  HotelBooking
 
 
 </title>
@@ -227,11 +227,11 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/GeneratedPhoto.html">GeneratedPhoto</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/GeneratedPhoto.MediaMetadata.html">GeneratedPhoto.MediaMetadata</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/GeneratedPhoto.MediaMetadata.Dimension.html">GeneratedPhoto.MediaMetadata.Dimension</a></li>
-          <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelBooking.html">HotelBooking</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/HotelBooking.html">HotelBooking</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelBooking.AssociatedRecord.html">HotelBooking.AssociatedRecord</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.html">HotelOffer</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.AddressType.html">HotelOffer.AddressType</a></li>
-          <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.BaseTotalAmount.html">HotelOffer.BaseTotalAmount</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.BaseTotalAmount.html">HotelOffer.BaseTotalAmount</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.CancellationPolicy.html">HotelOffer.CancellationPolicy</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.CheckInOutPolicy.html">HotelOffer.CheckInOutPolicy</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/HotelOffer.Commission.html">HotelOffer.Commission</a></li>
@@ -329,12 +329,21 @@
   
   
 
+  
+   
+  
+  
+  
+  
+
 
 <div class="sum-details-links">
 
 
 Summary:
 
+  <a href="#nestedclasses">Nested Classes</a>
+  
 
 
 
@@ -345,7 +354,8 @@ Summary:
 
 
 
-  <a href="#pubmethods">Methods</a>
+
+  &#124; <a href="#pubmethods">Methods</a>
   
 
 
@@ -374,12 +384,16 @@ Summary:
      
     
     class
-<h1>HotelOffer.BaseTotalAmount</h1>
+<h1>HotelBooking</h1>
 
 
 
   
-    extends Object<br/>
+  
+  
+
+  
+    extends <a href="../../../com/amadeus/resources/Resource.html">Resource</a><br/>
   
   
   
@@ -399,7 +413,7 @@ Summary:
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+        <td colspan="3" class="jd-inheritance-class-cell">java.lang.Object</td>
     </tr>
     
 
@@ -407,7 +421,17 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.HotelOffer.BaseTotalAmount</td>
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../com/amadeus/resources/Resource.html">com.amadeus.resources.Resource</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amadeus.resources.HotelBooking</td>
     </tr>
     
 
@@ -423,13 +447,13 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>An HotelOffer-related object as returned by the HotelOffers API.</p>
+<p>An HotelBooking object as returned by the Hotel Booking API.</p>
 
 
 
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../com/amadeus/shopping/HotelOffers.html#get()">get()</a></code></li>
+      <ul class="nolist"><li>com.amadeus.booking.HotelBookings#get()</li>
       </ul>
   </div>
 
@@ -456,6 +480,27 @@ Summary:
 
 <h2>Summary</h2>
 
+
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
+
+
+  
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol">
+        
+         
+         
+        
+        class</td>
+      <td class="jd-linkcol"><a href="../../../com/amadeus/resources/HotelBooking.AssociatedRecord.html">HotelBooking.AssociatedRecord</a></td>
+      <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+
+</table>
 
 
 
@@ -495,10 +540,10 @@ Summary:
             
             
             
-            String
+            <a href="../../../com/amadeus/resources/HotelBooking.AssociatedRecord.html">HotelBooking.AssociatedRecord</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/HotelOffer.BaseTotalAmount.html#getBase()">getBase</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelBooking.html#getAssociatedRecords()">getAssociatedRecords</a></span>()
         
   </td></tr>
 
@@ -514,7 +559,7 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/HotelOffer.BaseTotalAmount.html#getTotal()">getTotal</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelBooking.html#getId()">getId</a></span>()
         
   </td></tr>
 
@@ -530,7 +575,39 @@ Summary:
             String
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/amadeus/resources/HotelOffer.BaseTotalAmount.html#toString()">toString</a></span>()
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelBooking.html#getProviderConfirmationId()">getProviderConfirmationId</a></span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            String
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelBooking.html#getType()">getType</a></span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            String
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/amadeus/resources/HotelBooking.html#toString()">toString</a></span>()
         
   </td></tr>
 
@@ -548,6 +625,50 @@ Summary:
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.amadeus.resources.Resource" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.amadeus.resources.Resource-trigger"
+          src="../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="../../../com/amadeus/resources/Resource.html">com.amadeus.resources.Resource</a>
+
+<div id="inherited-methods-com.amadeus.resources.Resource">
+  <div id="inherited-methods-com.amadeus.resources.Resource-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.amadeus.resources.Resource-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../../com/amadeus/Response.html">Response</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/amadeus/resources/Resource.html#getResponse()">getResponse</a></span>()
+        
+        <div class="jd-descrdiv">The original response that this object is populated from.</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
 
 
 <tr class="api apilevel-" >
@@ -761,7 +882,7 @@ From class
 
 
 
-<a id="getBase()"></a>
+<a id="getAssociatedRecords()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -771,9 +892,9 @@ From class
          
          
          
-        String
+        <a href="../../../com/amadeus/resources/HotelBooking.AssociatedRecord.html">HotelBooking.AssociatedRecord</a>
       </span>
-      <span class="sympad">getBase</span>
+      <span class="sympad">getAssociatedRecords</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -792,7 +913,7 @@ From class
 </div>
 
 
-<a id="getTotal()"></a>
+<a id="getId()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -804,7 +925,69 @@ From class
          
         String
       </span>
-      <span class="sympad">getTotal</span>
+      <span class="sympad">getId</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="getProviderConfirmationId()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">getProviderConfirmationId</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="getType()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">getType</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">

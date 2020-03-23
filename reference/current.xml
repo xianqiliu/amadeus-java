@@ -146,16 +146,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<constructor name="Booking"
- type="com.amadeus.Booking"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="client" type="com.amadeus.Amadeus">
-</parameter>
-</constructor>
 <method name="flightOrder"
  return="com.amadeus.booking.FlightOrder"
  abstract="false"
@@ -181,6 +171,16 @@
 </field>
 <field name="flightOrders"
  type="com.amadeus.booking.FlightOrders"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="hotelBookings"
+ type="com.amadeus.booking.HotelBookings"
  transient="false"
  volatile="false"
  static="false"
@@ -1689,6 +1689,58 @@
 </method>
 <method name="post"
  return="com.amadeus.resources.FlightOrder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+</class>
+<class name="HotelBookings"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="post"
+ return="com.amadeus.resources.HotelBooking[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="com.google.gson.JsonObject">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.HotelBooking[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="body" type="java.lang.String">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="post"
+ return="com.amadeus.resources.HotelBooking[]"
  abstract="false"
  native="false"
  synchronized="false"
@@ -4621,6 +4673,90 @@
 >
 </method>
 <method name="getWidth"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="HotelBooking"
+ extends="com.amadeus.resources.Resource"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getAssociatedRecords"
+ return="com.amadeus.resources.HotelBooking.AssociatedRecord"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getProviderConfirmationId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="HotelBooking.AssociatedRecord"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getOriginSystemCode"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getReference"
  return="java.lang.String"
  abstract="false"
  native="false"
@@ -8509,41 +8645,6 @@
 </method>
 </class>
 </package>
-<package name="examples.flight.createorders"
->
-<class name="FlightCreateOrders"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<constructor name="FlightCreateOrders"
- type="examples.flight.createorders.FlightCreateOrders"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</constructor>
-<method name="main"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="args" type="java.lang.String[]">
-</parameter>
-<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
-</exception>
-</method>
-</class>
-</package>
 <package name="examples.flight.offers"
 >
 <class name="FlightOffersPrice"
@@ -8556,41 +8657,6 @@
 >
 <constructor name="FlightOffersPrice"
  type="examples.flight.offers.FlightOffersPrice"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</constructor>
-<method name="main"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="args" type="java.lang.String[]">
-</parameter>
-<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
-</exception>
-</method>
-</class>
-</package>
-<package name="examples.media.files"
->
-<class name="AIGeneratedPhotos"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<constructor name="AIGeneratedPhotos"
- type="examples.media.files.AIGeneratedPhotos"
  static="false"
  final="false"
  deprecated="not deprecated"
