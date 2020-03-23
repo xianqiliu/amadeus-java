@@ -13,7 +13,7 @@ var NAVTREE_DATA =
 , "" ] ]
 , "" ], [ "com.amadeus.referenceData", "com/amadeus/referenceData/package-summary.html", [ [ "Classes", null, [ [ "Airlines", "com/amadeus/referenceData/Airlines.html", null, "" ] ]
 , "" ] ]
-, "" ], [ "com.amadeus.referenceData.locations", "com/amadeus/referenceData/locations/package-summary.html", [ [ "Classes", null, [ [ "Airports", "com/amadeus/referenceData/locations/Airports.html", null, "" ], [ "PointsOfInterest", "com/amadeus/referenceData/locations/PointsOfInterest.html", null, "" ] ]
+, "" ], [ "com.amadeus.referenceData.locations", "com/amadeus/referenceData/locations/package-summary.html", [ [ "Classes", null, [ [ "Airports", "com/amadeus/referenceData/locations/Airports.html", null, "" ], [ "PointOfInterest", "com/amadeus/referenceData/locations/PointOfInterest.html", null, "" ], [ "PointsOfInterest", "com/amadeus/referenceData/locations/PointsOfInterest.html", null, "" ] ]
 , "" ] ]
 , "" ], [ "com.amadeus.referenceData.locations.pointsOfInterest", "com/amadeus/referenceData/locations/pointsOfInterest/package-summary.html", [ [ "Classes", null, [ [ "BySquare", "com/amadeus/referenceData/locations/pointsOfInterest/BySquare.html", null, "" ] ]
 , "" ] ]

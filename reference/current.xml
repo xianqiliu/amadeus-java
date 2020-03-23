@@ -2064,6 +2064,19 @@
 <exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
 </exception>
 </method>
+<method name="pointOfInterest"
+ return="com.amadeus.referenceData.locations.PointOfInterest"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
 <field name="AIRPORT"
  type="java.lang.String"
  transient="false"
@@ -2096,6 +2109,16 @@
 </field>
 <field name="airports"
  type="com.amadeus.referenceData.locations.Airports"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="pointOfInterest"
+ type="com.amadeus.referenceData.locations.PointOfInterest"
  transient="false"
  volatile="false"
  static="false"
@@ -2162,6 +2185,43 @@
 </method>
 <method name="get"
  return="com.amadeus.resources.Location[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+</class>
+<class name="PointOfInterest"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="get"
+ return="com.amadeus.resources.PointOfInterest"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="get"
+ return="com.amadeus.resources.PointOfInterest"
  abstract="false"
  native="false"
  synchronized="false"
