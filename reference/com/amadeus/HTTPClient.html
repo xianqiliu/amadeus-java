@@ -439,6 +439,43 @@ Summary:
             
             
             
+            <a href="../../com/amadeus/Response.html">Response</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../com/amadeus/HTTPClient.html#delete(java.lang.String, com.amadeus.Params)">delete</a></span>(String path, <a href="../../com/amadeus/Params.html">Params</a> params)
+        
+        <div class="jd-descrdiv"><p>
+ A helper module for making generic DELETE requests calls.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../com/amadeus/Response.html">Response</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../com/amadeus/HTTPClient.html#delete(java.lang.String)">delete</a></span>(String path)
+        
+        <div class="jd-descrdiv">A helper module for making generic DELETE requests calls.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
             <a href="../../com/amadeus/resources/Resource.html">Resource[]</a>
         </td>
         <td class="jd-linkcol" width="100%">
@@ -967,6 +1004,126 @@ From class
 
 <h2>Public Methods</h2>
 
+
+
+<a id="delete(java.lang.String, com.amadeus.Params)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../com/amadeus/Response.html">Response</a>
+      </span>
+      <span class="sympad">delete</span>
+      <span class="normal">(String path, <a href="../../com/amadeus/Params.html">Params</a> params)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><p>
+ A helper module for making generic DELETE requests calls. It is used by
+ every namespaced API DELETE method.
+ </p>
+
+ <pre>
+ amadeus.booking.flightOrder("eJzTd9f3NjIJdzUGAAp%2fAiY=").delete();
+ </pre>
+
+ <p>
+ It can be used to make any generic API call that is automatically
+ authenticated using your API credentials:
+ </p>
+
+ <pre>
+ amadeus.delete("/v1/foo/bar", Params.with("airline", "1X"));
+ </pre></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>path</th>
+          <td>The full path for the API call</td>
+        </tr>
+        <tr>
+          <th>params</th>
+          <td>The optional DELETE params to pass to the API</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a Response object containing the status code, body, and parsed data.
+</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../com/amadeus/exceptions/ResponseException.html">ResponseException</a></td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="delete(java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../com/amadeus/Response.html">Response</a>
+      </span>
+      <span class="sympad">delete</span>
+      <span class="normal">(String path)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>A helper module for making generic DELETE requests calls. It is used by
+ every namespaced API DELETE method.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../com/amadeus/exceptions/ResponseException.html">ResponseException</a></td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../com/amadeus/HTTPClient.html#delete(java.lang.String, com.amadeus.Params)">delete(String, Params)</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
 
 
 <a id="first(com.amadeus.resources.Resource)"></a>

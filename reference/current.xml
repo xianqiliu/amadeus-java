@@ -522,6 +522,17 @@
  visibility="public"
 >
 </field>
+<field name="DELETE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;DELETE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="EXPIRES_IN"
  type="java.lang.String"
  transient="false"
@@ -692,6 +703,38 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<method name="delete"
+ return="com.amadeus.Response"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="delete"
+ return="com.amadeus.Response"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
 <method name="first"
  return="com.amadeus.Response"
  abstract="false"
@@ -1532,6 +1575,34 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<method name="delete"
+ return="com.amadeus.resources.FlightOrder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="delete"
+ return="com.amadeus.resources.FlightOrder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
 <method name="get"
  return="com.amadeus.resources.FlightOrder"
  abstract="false"
