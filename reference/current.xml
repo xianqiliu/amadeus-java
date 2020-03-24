@@ -3548,6 +3548,48 @@
 >
 </method>
 </class>
+<class name="FlightOfferSearch.Co2Emissions"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getCabin"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getWeight"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getWeightUnit"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
 <class name="FlightOfferSearch.FareDetailsBySegment"
  extends="java.lang.Object"
  abstract="false"
@@ -3829,6 +3871,17 @@
 </method>
 <method name="getCarrierCode"
  return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCo2Emissions"
+ return="com.amadeus.resources.FlightOfferSearch.Co2Emissions[]"
  abstract="false"
  native="false"
  synchronized="false"
