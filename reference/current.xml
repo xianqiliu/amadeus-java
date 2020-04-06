@@ -4806,7 +4806,7 @@
  visibility="public"
 >
 <method name="getAssociatedRecords"
- return="com.amadeus.resources.HotelBooking.AssociatedRecord"
+ return="com.amadeus.resources.HotelBooking.AssociatedRecord[]"
  abstract="false"
  native="false"
  synchronized="false"
