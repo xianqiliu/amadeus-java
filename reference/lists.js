@@ -154,8 +154,6 @@ var DATA = [
       { id:152, label:"com.amadeus.travel.analytics.airTraffic.Traveled", link:"com/amadeus/travel/analytics/airTraffic/Traveled.html", type:"class" },
       { id:153, label:"com.amadeus.travel.predictions", link:"com/amadeus/travel/predictions/package-summary.html", type:"package" },
       { id:154, label:"com.amadeus.travel.predictions.FlightDelay", link:"com/amadeus/travel/predictions/FlightDelay.html", type:"class" },
-      { id:155, label:"com.amadeus.travel.predictions.TripPurpose", link:"com/amadeus/travel/predictions/TripPurpose.html", type:"class" },
-      { id:156, label:"examples.flight.offers", link:"examples/flight/offers/package-summary.html", type:"package" },
-      { id:157, label:"examples.flight.offers.FlightOffersPrice", link:"examples/flight/offers/FlightOffersPrice.html", type:"class" }
+      { id:155, label:"com.amadeus.travel.predictions.TripPurpose", link:"com/amadeus/travel/predictions/TripPurpose.html", type:"class" }
 
     ];

@@ -29,8 +29,6 @@ var NAVTREE_DATA =
 , "" ] ]
 , "" ], [ "com.amadeus.travel.predictions", "com/amadeus/travel/predictions/package-summary.html", [ [ "Classes", null, [ [ "FlightDelay", "com/amadeus/travel/predictions/FlightDelay.html", null, "" ], [ "TripPurpose", "com/amadeus/travel/predictions/TripPurpose.html", null, "" ] ]
 , "" ] ]
-, "" ], [ "examples.flight.offers", "examples/flight/offers/package-summary.html", [ [ "Classes", null, [ [ "FlightOffersPrice", "examples/flight/offers/FlightOffersPrice.html", null, "" ] ]
-, "" ] ]
 , "" ] ]
 
 ;
