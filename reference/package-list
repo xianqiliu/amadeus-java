@@ -9,6 +9,8 @@ com.amadeus.referenceData.locations
 com.amadeus.referenceData.locations.pointsOfInterest
 com.amadeus.referenceData.urls
 com.amadeus.resources
+com.amadeus.safety
+com.amadeus.safety.safetyRatedLocations
 com.amadeus.shopping
 com.amadeus.shopping.flightOffers
 com.amadeus.travel.analytics.airTraffic

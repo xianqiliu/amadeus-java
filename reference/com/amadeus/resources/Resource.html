@@ -163,6 +163,10 @@
     <li class="selected api apilevel-">
   <a href="../../../com/amadeus/resources/package-summary.html">com.amadeus.resources</a></li>
     <li class="api apilevel-">
+  <a href="../../../com/amadeus/safety/package-summary.html">com.amadeus.safety</a></li>
+    <li class="api apilevel-">
+  <a href="../../../com/amadeus/safety/safetyRatedLocations/package-summary.html">com.amadeus.safety.safetyRatedLocations</a></li>
+    <li class="api apilevel-">
   <a href="../../../com/amadeus/shopping/package-summary.html">com.amadeus.shopping</a></li>
     <li class="api apilevel-">
   <a href="../../../com/amadeus/shopping/flightOffers/package-summary.html">com.amadeus.shopping.flightOffers</a></li>
@@ -256,6 +260,9 @@
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/PointOfInterest.GeoCode.html">PointOfInterest.GeoCode</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/Prediction.html">Prediction</a></li>
           <li class="selected api apilevel-"><a href="../../../com/amadeus/resources/Resource.html">Resource</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/SafePlace.html">SafePlace</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/SafePlace.GeoCode.html">SafePlace.GeoCode</a></li>
+          <li class="api apilevel-"><a href="../../../com/amadeus/resources/SafePlace.SafetyRating.html">SafePlace.SafetyRating</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/SeatMap.html">SeatMap</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/SeatMap.Aircraft.html">SeatMap.Aircraft</a></li>
           <li class="api apilevel-"><a href="../../../com/amadeus/resources/SeatMap.Arrival.html">SeatMap.Arrival</a></li>
@@ -418,45 +425,83 @@ Summary:
               >
           
             
-              <a href="../../../com/amadeus/resources/AirTraffic.html">AirTraffic</a>,
             
-              <a href="../../../com/amadeus/resources/Airline.html">Airline</a>,
+              
+                <a href="../../../com/amadeus/resources/AirTraffic.html">AirTraffic</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/CheckinLink.html">CheckinLink</a>,
+              
+                <a href="../../../com/amadeus/resources/Airline.html">Airline</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/FlightDate.html">FlightDate</a>,
+              
+                <a href="../../../com/amadeus/resources/CheckinLink.html">CheckinLink</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/FlightDestination.html">FlightDestination</a>,
+              
+                <a href="../../../com/amadeus/resources/FlightDate.html">FlightDate</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/FlightOfferSearch.html">FlightOfferSearch</a>,
+              
+                <a href="../../../com/amadeus/resources/FlightDestination.html">FlightDestination</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/FlightOrder.html">FlightOrder</a>,
+              
+                <a href="../../../com/amadeus/resources/FlightOfferSearch.html">FlightOfferSearch</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/FlightPayment.html">FlightPayment</a>,
+              
+                <a href="../../../com/amadeus/resources/FlightOrder.html">FlightOrder</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/FlightPrice.html">FlightPrice</a>,
+              
+                <a href="../../../com/amadeus/resources/FlightPayment.html">FlightPayment</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/GeneratedPhoto.html">GeneratedPhoto</a>,
+              
+                <a href="../../../com/amadeus/resources/FlightPrice.html">FlightPrice</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/HotelBooking.html">HotelBooking</a>,
+              
+                <a href="../../../com/amadeus/resources/GeneratedPhoto.html">GeneratedPhoto</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/HotelOffer.html">HotelOffer</a>,
+              
+                <a href="../../../com/amadeus/resources/HotelBooking.html">HotelBooking</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/HotelOffer.Offer.html">HotelOffer.Offer</a>,
+              
+                <a href="../../../com/amadeus/resources/HotelOffer.html">HotelOffer</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/HotelSentiment.html">HotelSentiment</a>,
+              
+                <a href="../../../com/amadeus/resources/HotelOffer.Offer.html">HotelOffer.Offer</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/Location.html">Location</a>,
+              
+                <a href="../../../com/amadeus/resources/HotelSentiment.html">HotelSentiment</a>,
+              
+              
             
-              <a href="../../../com/amadeus/resources/Period.html">Period</a>,
-            
-              <a href="../../../com/amadeus/resources/PointOfInterest.html">PointOfInterest</a>,
-            
-              <a href="../../../com/amadeus/resources/Prediction.html">Prediction</a>,
-            
-              <a href="../../../com/amadeus/resources/SeatMap.html">SeatMap</a>,
-            
-              <a href="../../../com/amadeus/resources/Traveler.html">Traveler</a>
+              
+                <a href="../../../com/amadeus/resources/Location.html">Location</a>,
+              
+              and
+                <a href="#" onclick="return toggleInherited(document.getElementById('subclasses-direct', null))">6 others.</a>
+              
             
           
       </div>
@@ -537,10 +582,14 @@ Summary:
               <td class="jd-descrcol" width="100%">An Period object as returned by the Prediction APIs.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../com/amadeus/resources/SafePlace.html">SafePlace</a></td>
+              <td class="jd-descrcol" width="100%">A SafePlace object as returned by the Safe Place API.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/amadeus/resources/SeatMap.html">SeatMap</a></td>
               <td class="jd-descrcol" width="100%">An SeatMap object as returned by the SeatMap API.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/amadeus/resources/Traveler.html">Traveler</a></td>
               <td class="jd-descrcol" width="100%">An Traveler object used in the body of Flight Create Orders.&nbsp;</td>
           </tr>

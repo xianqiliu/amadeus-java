@@ -117,6 +117,16 @@
  visibility="public"
 >
 </field>
+<field name="safety"
+ type="com.amadeus.Safety"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="shopping"
  type="com.amadeus.Shopping"
  transient="false"
@@ -1383,6 +1393,38 @@
  visibility="public"
 >
 </method>
+</class>
+<class name="Safety"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="safetyRatedLocation"
+ return="com.amadeus.safety.SafetyRatedLocation"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="safetyRatedLocationId" type="java.lang.String">
+</parameter>
+</method>
+<field name="safetyRatedLocations"
+ type="com.amadeus.safety.SafetyRatedLocations"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 <class name="Shopping"
  extends="java.lang.Object"
@@ -6564,6 +6606,198 @@
 >
 </method>
 </class>
+<class name="SafePlace"
+ extends="com.amadeus.resources.Resource"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getGeoCode"
+ return="com.amadeus.resources.SafePlace.GeoCode"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSafetyRating"
+ return="com.amadeus.resources.SafePlace.SafetyRating"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSubType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="SafePlace.GeoCode"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getLatitude"
+ return="double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLongitude"
+ return="double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="SafePlace.SafetyRating"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getLgbtq"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getMedical"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOverall"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPhysicalHarm"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPoliticalFreedom"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTheft"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getWomen"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
 <class name="SeatMap"
  extends="com.amadeus.resources.Resource"
  abstract="false"
@@ -7415,6 +7649,133 @@
 >
 <parameter name="number" type="java.lang.String">
 </parameter>
+</method>
+</class>
+</package>
+<package name="com.amadeus.safety"
+>
+<class name="SafetyRatedLocation"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="get"
+ return="com.amadeus.resources.SafePlace"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="get"
+ return="com.amadeus.resources.SafePlace"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+</class>
+<class name="SafetyRatedLocations"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="get"
+ return="com.amadeus.resources.SafePlace[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="get"
+ return="com.amadeus.resources.SafePlace[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<field name="bySquare"
+ type="com.amadeus.safety.safetyRatedLocations.BySquare"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+<package name="com.amadeus.safety.safetyRatedLocations"
+>
+<class name="BySquare"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="get"
+ return="com.amadeus.resources.SafePlace[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="get"
+ return="com.amadeus.resources.SafePlace[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
 </method>
 </class>
 </package>
