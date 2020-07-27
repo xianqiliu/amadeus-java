@@ -11,7 +11,7 @@ var NAVTREE_DATA =
 , "" ] ]
 , "" ], [ "com.amadeus.media.files", "com/amadeus/media/files/package-summary.html", [ [ "Classes", null, [ [ "GeneratedPhotos", "com/amadeus/media/files/GeneratedPhotos.html", null, "" ] ]
 , "" ] ]
-, "" ], [ "com.amadeus.referenceData", "com/amadeus/referenceData/package-summary.html", [ [ "Classes", null, [ [ "Airlines", "com/amadeus/referenceData/Airlines.html", null, "" ] ]
+, "" ], [ "com.amadeus.referenceData", "com/amadeus/referenceData/package-summary.html", [ [ "Classes", null, [ [ "Airlines", "com/amadeus/referenceData/Airlines.html", null, "" ], [ "RecommendedLocations", "com/amadeus/referenceData/RecommendedLocations.html", null, "" ] ]
 , "" ] ]
 , "" ], [ "com.amadeus.referenceData.locations", "com/amadeus/referenceData/locations/package-summary.html", [ [ "Classes", null, [ [ "Airports", "com/amadeus/referenceData/locations/Airports.html", null, "" ], [ "PointOfInterest", "com/amadeus/referenceData/locations/PointOfInterest.html", null, "" ], [ "PointsOfInterest", "com/amadeus/referenceData/locations/PointsOfInterest.html", null, "" ] ]
 , "" ] ]

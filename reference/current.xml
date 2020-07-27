@@ -1112,6 +1112,16 @@
  visibility="public"
 >
 </field>
+<field name="recommendedLocations"
+ type="com.amadeus.referenceData.RecommendedLocations"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="urls"
  type="com.amadeus.referenceData.Urls"
  transient="false"
@@ -2213,6 +2223,43 @@
  visibility="public"
 >
 </field>
+</class>
+<class name="RecommendedLocations"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="get"
+ return="com.amadeus.resources.Location[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="params" type="com.amadeus.Params">
+</parameter>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
+<method name="get"
+ return="com.amadeus.resources.Location[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ResponseException" type="com.amadeus.exceptions.ResponseException">
+</exception>
+</method>
 </class>
 <class name="Urls"
  extends="java.lang.Object"
