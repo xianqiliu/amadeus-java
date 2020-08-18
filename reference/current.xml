@@ -6694,8 +6694,8 @@
  visibility="public"
 >
 </method>
-<method name="getSafetyRating"
- return="com.amadeus.resources.SafePlace.SafetyRating"
+<method name="getSafetyScores"
+ return="com.amadeus.resources.SafePlace.SafetyScores"
  abstract="false"
  native="false"
  synchronized="false"
@@ -6759,7 +6759,7 @@
 >
 </method>
 </class>
-<class name="SafePlace.SafetyRating"
+<class name="SafePlace.SafetyScores"
  extends="java.lang.Object"
  abstract="false"
  static="false"

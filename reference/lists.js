@@ -118,7 +118,7 @@ var DATA = [
       { id:116, label:"com.amadeus.resources.Resource", link:"com/amadeus/resources/Resource.html", type:"class" },
       { id:117, label:"com.amadeus.resources.SafePlace", link:"com/amadeus/resources/SafePlace.html", type:"class" },
       { id:118, label:"com.amadeus.resources.SafePlace.GeoCode", link:"com/amadeus/resources/SafePlace.GeoCode.html", type:"class" },
-      { id:119, label:"com.amadeus.resources.SafePlace.SafetyRating", link:"com/amadeus/resources/SafePlace.SafetyRating.html", type:"class" },
+      { id:119, label:"com.amadeus.resources.SafePlace.SafetyScores", link:"com/amadeus/resources/SafePlace.SafetyScores.html", type:"class" },
       { id:120, label:"com.amadeus.resources.SeatMap", link:"com/amadeus/resources/SeatMap.html", type:"class" },
       { id:121, label:"com.amadeus.resources.SeatMap.Aircraft", link:"com/amadeus/resources/SeatMap.Aircraft.html", type:"class" },
       { id:122, label:"com.amadeus.resources.SeatMap.AircraftCabinAmenities", link:"com/amadeus/resources/SeatMap.AircraftCabinAmenities.html", type:"class" },
