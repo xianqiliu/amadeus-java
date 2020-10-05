@@ -13,6 +13,7 @@ com.amadeus.safety
 com.amadeus.safety.safetyRatedLocations
 com.amadeus.schedule
 com.amadeus.shopping
+com.amadeus.shopping.activities
 com.amadeus.shopping.flightOffers
 com.amadeus.travel.analytics.airTraffic
 com.amadeus.travel.predictions
