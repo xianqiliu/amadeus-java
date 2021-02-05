@@ -1759,7 +1759,7 @@
  visibility="public"
 >
 <method name="delete"
- return="com.amadeus.resources.FlightOrder"
+ return="com.amadeus.Response"
  abstract="false"
  native="false"
  synchronized="false"
@@ -1774,7 +1774,7 @@
 </exception>
 </method>
 <method name="delete"
- return="com.amadeus.resources.FlightOrder"
+ return="com.amadeus.Response"
  abstract="false"
  native="false"
  synchronized="false"
