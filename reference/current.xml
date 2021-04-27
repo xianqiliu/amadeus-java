@@ -60,7 +60,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;5.7.1&quot;"
+ value="&quot;5.7.2&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
